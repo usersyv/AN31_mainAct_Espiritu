@@ -3,7 +3,7 @@ const storeName = "Alt F4 Hub";
 const storeLocation = "Alabang, Muntinlupa City";
 let storeCapacity = 100;
 
-// Product Array
+// Product Array to store the products details
 let products = [
   { name: "Laptop", price: 18999, quantity: 20 },
   { name: "Smartphone", price: 9999, quantity: 50 },
@@ -21,7 +21,7 @@ console.log('5. View Total Inventory Value');
 // Get User Input for Menu Option
 let userInput = parseInt(prompt('Enter your number (1-5): '));
 
-// Menu Action Handler
+// if else statement for menu
 if (userInput === 1) {
     viewProducts();
 } else if (userInput === 2) {
@@ -44,7 +44,6 @@ function viewProducts() {
         console.log(`Name: ${products[i].name}, Price: ${products[i].price}, Quantity: ${products[i].quantity}`);
     }
 }
-
 
 // Function to Check Inventory Capacity
 function checkInventoryCapacity() {
@@ -110,4 +109,5 @@ console.log(`Store: ${storeName}`);
 console.log(`Located at: ${storeLocation}`);
 console.log();
 console.log(`Total Number of Product Types: ${products.length}`);
-checkInventoryCapacity();
+console.log();
+console.log();
